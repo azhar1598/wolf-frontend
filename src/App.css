@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:8.1%;
+  background: linear-gradient(to right bottom,rgb(238, 219, 219),rgb(186, 186, 212));
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.container__login-form{
+  height:55vh;
+  width:auto;
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding:40px;
+  background: linear-gradient(#f7f7f7, #c7d6db 50%, #f7f7f7 90%);
+
 }
 
-.App-link {
-  color: #61dafb;
+.container__login-form__header{
+  margin-top:-10vh;
+}
+.container__login-form__input{
+  padding: 10px;
+  margin-top:10px;
+  width:16vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container__login-form__button{
+padding:10px;
+margin-top:10px;
+width:16vw;
+cursor:pointer;
+}
+
+.container__login-form__signup-link{
+  text-decoration:none;
+  margin-top: 10px;
+}
+.container__login-form__forgot-password-link{
+  text-decoration:none;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  .container__login-form{
+    height:55vh;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:40px;
   }
-  to {
-    transform: rotate(360deg);
+  .container__login-form__header{
+    margin-top:-10vh;
+  }
+  .container__login-form__input{
+    padding: 10px;
+    margin-top:10px;
+    width:60vw;
+  }
+  
+  .container__login-form__button{
+  padding:10px;
+  margin-top:10px;
+  width:60vw;
+  cursor:pointer;
   }
 }
